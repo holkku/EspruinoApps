@@ -25,7 +25,7 @@ function draw() {
   var date = new Date();
   var timeStr = require("locale").time(date,1);
   var dateStr = require("locale").date(date).toUpperCase();
-  var dowStr = date.as("a   T").str; //require("locale").dow(date).toUpperCase();
+  var dowStr = date.as("a   T").str.toUpperCase(); //require("locale").dow(date).toUpperCase();
   // draw time
   g.setFontAlign(0,0).setFont("Anton");
   g.clearRect(0,y-40,g.getWidth(),y+35); // clear the background
