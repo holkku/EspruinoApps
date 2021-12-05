@@ -34,7 +34,7 @@ function draw() {
   g.clearRect(0,y0-8,g.getWidth(),y0+8); // clear the background
   g.drawString(dateStr,x,y0);
   // draw time
-  y += 60;
+  y += 16;
   g.setFontAlign(0,0).setFont("Anton");
   g.clearRect(0,y-40,g.getWidth(),y+35); // clear the background
   g.drawString(timeStr,x,y);
