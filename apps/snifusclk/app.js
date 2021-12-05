@@ -21,6 +21,7 @@ function queueDraw() {
 function draw() {
   var x = g.getWidth()/2;
   var y = g.getHeight()/2;
+  var y0 = 0;
   g.reset();
   var date = new Date();
   var timeStr = date.as("0i:0m").str; //require("locale").time(date,1);
@@ -28,11 +29,12 @@ function draw() {
   var dowStr = date.as("a   T").str.toUpperCase(); //require("locale").dow(date).toUpperCase();
   // draw date
   //y += 40;
+  y0 += 40;
   g.setFontAlign(0,0).setFont("6x8",2);
-  g.clearRect(0,y-8,g.getWidth(),y+8); // clear the background
-  g.drawString(dateStr,x,y);
+  g.clearRect(0,y0-8,g.getWidth(),y0+8); // clear the background
+  g.drawString(dateStr,x,y0);
   // draw time
-  y += 16;
+  y += 60;
   g.setFontAlign(0,0).setFont("Anton");
   g.clearRect(0,y-40,g.getWidth(),y+35); // clear the background
   g.drawString(timeStr,x,y);
