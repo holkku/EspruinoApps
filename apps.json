@@ -4162,6 +4162,22 @@
     ]
   },
   {
+    "id": "snifusclk",
+    "name": "Snifu's Clock",
+    "version": "0.01",
+    "description": "A simple clock using the bold Anton font.",
+    "icon": "app.png",
+    "screenshots": [{"url":"screenshot.png"}],
+    "type": "clock",
+    "tags": "clock",
+    "supports": ["BANGLEJS","BANGLEJS2"],
+    "allow_emulator": true,
+    "storage": [
+      {"name":"snifusclk.app.js","url":"app.js"},
+      {"name":"snifusclk.img","url":"app-icon.js","evaluate":true}
+    ]
+  },  
+  {
     "id": "waveclk",
     "name": "Wave Clock",
     "version": "0.02",
