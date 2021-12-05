@@ -23,18 +23,19 @@ function draw() {
   var y = g.getHeight()/2;
   g.reset();
   var date = new Date();
-  var timeStr = require("locale").time(date,1);
-  var dateStr = require("locale").date(date).toUpperCase();
+  var timeStr = date.as("0i:0m").str; //require("locale").time(date,1);
+  var dateStr = date.as("0D.0M.Y").str; //require("locale").date(date).toUpperCase();
   var dowStr = date.as("a   T").str.toUpperCase(); //require("locale").dow(date).toUpperCase();
-  // draw time
-  g.setFontAlign(0,0).setFont("Anton");
-  g.clearRect(0,y-40,g.getWidth(),y+35); // clear the background
-  g.drawString(timeStr,x,y);
   // draw date
-  y += 40;
+  //y += 40;
   g.setFontAlign(0,0).setFont("6x8",2);
   g.clearRect(0,y-8,g.getWidth(),y+8); // clear the background
   g.drawString(dateStr,x,y);
+  // draw time
+  y += 16;
+  g.setFontAlign(0,0).setFont("Anton");
+  g.clearRect(0,y-40,g.getWidth(),y+35); // clear the background
+  g.drawString(timeStr,x,y);
   //draw day of week
   y += 16;
   g.clearRect(0,y-8,g.getWidth(),y+8); // clear the background
