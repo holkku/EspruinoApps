@@ -40,7 +40,7 @@ function draw() {
   g.drawString(timeStr,x,y);
   //draw day of week
   y += 40;
-  g.setFontAlign(0,0).setFont("6x8",2.5);
+  g.setFontAlign(0,0).setColor(0,0,0).setFont("6x8",2.5);
   g.clearRect(0,y-8,g.getWidth(),y+8); // clear the background
   g.drawString(dowStr,x,y);
   // queue draw in one minute
