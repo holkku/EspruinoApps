@@ -35,7 +35,7 @@ function draw() {
   g.drawString(dateStr,x,y0);
   // draw time
   y += 16;
-  g.setFontAlign(0,0).setColor(1,0,1).setFont("Anton");
+  g.setFontAlign(0,0).setColor(0,0,1).setFont("Anton");
   g.clearRect(0,y-40,g.getWidth(),y+35); // clear the background
   g.drawString(timeStr,x,y);
   //draw day of week
