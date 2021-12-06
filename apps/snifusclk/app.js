@@ -30,17 +30,17 @@ function draw() {
   // draw date
   //y += 40;
   y0 += 40;
-  g.setFontAlign(0,0).setFont("6x8",3);
+  g.setFontAlign(0,0).setFont("6x8",2.5);
   g.clearRect(0,y0-8,g.getWidth(),y0+8); // clear the background
   g.drawString(dateStr,x,y0);
   // draw time
   y += 16;
-  g.setFontAlign(0,0).setColor(0,1,0).setFont("Anton");
+  g.setFontAlign(0,0).setColor(1,0,1).setFont("Anton");
   g.clearRect(0,y-40,g.getWidth(),y+35); // clear the background
   g.drawString(timeStr,x,y);
   //draw day of week
   y += 40;
-  g.setFontAlign(0,0).setFont("6x8",3);
+  g.setFontAlign(0,0).setFont("6x8",2.5);
   g.clearRect(0,y-8,g.getWidth(),y+8); // clear the background
   g.drawString(dowStr,x,y);
   // queue draw in one minute
