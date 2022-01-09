@@ -4189,8 +4189,8 @@
     "supports": ["BANGLEJS","BANGLEJS2"],
     "allow_emulator": true,
     "storage": [
-      {"name":"snifu2clk.app.js","url":"app.js"},
-      {"name":"snifu2clk.img","url":"app-icon.js","evaluate":true}
+      {"name":"snifu2.app.js","url":"app.js"},
+      {"name":"snifu2.img","url":"app-icon.js","evaluate":true}
     ]
   },  
   {
