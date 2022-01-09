@@ -4178,6 +4178,22 @@
     ]
   },  
   {
+    "id": "snifu2clk",
+    "name": "Snifu's Analog Clock",
+    "version": "0.01",
+    "description": "New clock.",
+    "icon": "app.png",
+    "screenshots": [{"url":"screenshot.png"}],
+    "type": "clock",
+    "tags": "clock",
+    "supports": ["BANGLEJS","BANGLEJS2"],
+    "allow_emulator": true,
+    "storage": [
+      {"name":"snifu2clk.app.js","url":"app.js"},
+      {"name":"snifu2clk.img","url":"app-icon.js","evaluate":true}
+    ]
+  },  
+  {
     "id": "waveclk",
     "name": "Wave Clock",
     "version": "0.02",
