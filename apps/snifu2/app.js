@@ -102,16 +102,16 @@ function draw() {
 
     g.setColor(g.theme.fg);
 g.setFontAlign(0,0).setFont("6x8",2.5);
-  g.drawString(date.as("0i:0m").str,30,30);
+  g.drawString(date.as("0i:0m").str,35,30);
 
   g.setFontAlign(0,0).setFont("6x8",2.5);
   g.drawString(date.as("a").str.toUpperCase(),130,30);
   
   g.setFontAlign(0,0).setFont("6x8",2.5);
-  g.drawString(date.as("0D.0M").str,30,170);
+  g.drawString(date.as("0D.0M").str,35,165);
 
     g.setFontAlign(0,0).setFont("6x8",2.5);
-  g.drawString(date.as("T").str.toUpperCase(),130,170);
+  g.drawString(date.as("T").str.toUpperCase(),130,165);
 
   let hour_agl = hour_angle(date);
   let minute_agl = minute_angle(date);
